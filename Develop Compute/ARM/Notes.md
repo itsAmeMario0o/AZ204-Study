@@ -28,3 +28,9 @@ ARM templates can be downloaded from the Azure Portal once a resource is created
 Microsoft provides a variety of ARM templates that can be deployed. 
 
 ARM Templates can also be executed via powershell!
+
+ARM Templates can be linked and associated with other ARM templates. Linked templates reference a URI or relativePath property that refers to the other ARM templates. 
+
+It is a common deployment pattern to have all the ARM templates in a git repo and create a storage account with a container where the repos are cloned and stored for the purposes of execution. 
+
+[Linked ARM Templates] https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-tutorial-linked-template?tabs=azure-powershell
