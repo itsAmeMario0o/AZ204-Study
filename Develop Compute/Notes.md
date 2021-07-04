@@ -29,6 +29,8 @@ az vm image list --output table
 
 az vm list-sizes -l <location> --output table
 
+---
+
 #### Create Virtual Machine #### 
 
 az vm create --resource-group RG --name LinuxVM --image Centos --size Standard_B1ms --vnet-name RG-vnet --subnet SUBNET1 --admin-username admin --generate-ssh-keys
